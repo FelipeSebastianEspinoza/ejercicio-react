@@ -6,10 +6,16 @@ const container = document.getElementById('root');
 
 
 
+
+
 //ReactDOM.render(elemento, donde);
 
-ReactDOM.render(<Card />, container);
+ReactDOM.render(<Card
+  title="Título "
+  description="Learn amazing guides"
+  leftColor="#A74CF2"
+  rightColor="#617BFB"
+/>, container);
 
 
- 
- 
+
