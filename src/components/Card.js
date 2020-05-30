@@ -1,25 +1,24 @@
 import React from 'react';
-import catImg from '../images/icon.png';
 import circlesImg from '../images/circles.png';
 import './styles/Card.css'
 
 
 class Card extends React.Component {
-
-    constructor(props){
+/*
+    constructor(props) {
         super(props)
         this.state = {
             image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png'
         }
     }
-    componentDidMount(){
-        setTimeout(() =>{
+    componentDidMount() {
+        setTimeout(() => {
             this.setState({
                 image: 'https://vignette.wikia.nocookie.net/pokemonreloaded/images/f/f1/Wigglytuff.png/revision/latest/scale-to-width-down/340?cb=20150825204600&path-prefix=es'
             })
-        },5000)
+        }, 5000)
     }
-
+*/  //  <img src={this.state.image} className="floar-right" /> esto iba en la linea de abajo para usar la funcion anterior
 
 
     render() {
@@ -30,11 +29,11 @@ class Card extends React.Component {
                 <div className="card-body">
                     <div className="row center">
                         <div className="col-6">
-                            <img src={this.state.image} className="floar-right" />
+                           <img src={this.props.img} className="float-right" alt="" />
                         </div>
                         <div className="col-6 Fitness-Card-Info">
                             <h1>{this.props.title}</h1>
-                            <p>{this.description}</p>
+                            <p>{this.props.description}</p>
                         </div>
                     </div>
                 </div>

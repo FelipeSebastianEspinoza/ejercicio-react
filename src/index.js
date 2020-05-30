@@ -1,21 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Card from './components/Card';
 import 'bootstrap/dist/css/bootstrap.css'
+import App from './components/App';
+
+
 const container = document.getElementById('root');
-
-
-
 
 
 //ReactDOM.render(elemento, donde);
 
-ReactDOM.render(<Card
-  title="Título "
-  description="Learn amazing guides"
-  leftColor="#A74CF2"
-  rightColor="#617BFB"
-/>, container);
-
-
+ReactDOM.render(<App />, container);
 
