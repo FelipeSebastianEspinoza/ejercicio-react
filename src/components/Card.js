@@ -1,10 +1,9 @@
-import React from 'react';
-import circlesImg from '../images/circles.png';
-import './styles/Card.css'
-
+import React from "react";
+import circlesImg from "../images/circles.png";
+import "./styles/Card.css";
 
 class Card extends React.Component {
-/*
+  /*
     constructor(props) {
         super(props)
         this.state = {
@@ -18,33 +17,30 @@ class Card extends React.Component {
             })
         }, 5000)
     }
-*/  //  <img src={this.state.image} className="floar-right" /> esto iba en la linea de abajo para usar la funcion anterior
+*/ //  <img src={this.state.image} className="floar-right" /> esto iba en la linea de abajo para usar la funcion anterior
 
-
-    render() {
-        return (
-            <div className="card mx-auto Fitness-Card"
-                style={{ backgroundImage: `url(${circlesImg}), linear-gradient(to right, ${this.props.leftColor}, ${this.props.rightColor}` }}
-            >
-                <div className="card-body">
-                    <div className="row center">
-                        <div className="col-6">
-                           <img src={this.props.img} className="float-right" alt="" />
-                        </div>
-                        <div className="col-6 Fitness-Card-Info">
-                            <h1>{this.props.title}</h1>
-                            <p>{this.props.description}</p>
-                        </div>
-                    </div>
-                </div>
+  render() {
+    return (
+      <div
+        className="card mx-auto Fitness-Card"
+        style={{
+          backgroundImage: `url(${circlesImg}), linear-gradient(to right, ${this.props.leftColor}, ${this.props.rightColor}`,
+        }}
+      >
+        <div className="card-body">
+          <div className="row center">
+            <div className="col-6">
+              <img src={this.props.img} className="float-right" alt="" />
             </div>
-        )
-    }
+            <div className="col-6 Fitness-Card-Info">
+              <h1>{this.props.title}</h1>
+              <p>{this.props.description}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default Card
-
-
-
-
-
+export default Card;
